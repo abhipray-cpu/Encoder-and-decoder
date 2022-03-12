@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>929</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Encryption</string>
+  </property>
+  <widget class="QWidget" name="MainWidget">
+   <widget class="Line" name="Seprator">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>911</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="InputLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>INPUT</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="InputEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>20</y>
+      <width>621</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="encryptButton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>150</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="OutputLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>OUTPUT</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="OutputEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>240</y>
+      <width>631</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="HashCombo">
+    <property name="geometry">
+     <rect>
+      <x>770</x>
+      <y>30</y>
+      <width>151</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>SHA256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA224</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA512</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA384</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA3_512</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA3_384</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA3_256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA3_224</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHAKE256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHAKE128</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA512_224</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SHA512_256</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MD5_SHA1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>WHIRLPOOL</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RIPEMD_160</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BLAKE2S</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BLAKE2B</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SM3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ADLER32</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CR32</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>929</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="EncryptMenu">
+    <property name="title">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="KEncryptMenu">
+    <property name="title">
+     <string>Key Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="KDecryptMenu">
+    <property name="title">
+     <string>Key Decrypt</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="PasswordMenu">
+    <property name="title">
+     <string>Strong password</string>
+    </property>
+   </widget>
+   <addaction name="EncryptMenu"/>
+   <addaction name="KEncryptMenu"/>
+   <addaction name="KDecryptMenu"/>
+   <addaction name="PasswordMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
