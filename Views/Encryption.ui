@@ -16,6 +16,9 @@
   <property name="windowTitle">
    <string>Encryption</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
   <widget class="QWidget" name="MainWidget">
    <widget class="Line" name="Seprator">
     <property name="geometry">
@@ -44,6 +47,10 @@
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+color: rgb(0, 255, 0);</string>
+    </property>
     <property name="text">
      <string>INPUT</string>
     </property>
@@ -63,6 +70,9 @@
       <height>191</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="encryptButton">
     <property name="geometry">
@@ -77,6 +87,10 @@
      <font>
       <pointsize>10</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 0);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Encrypt</string>
@@ -98,6 +112,10 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 85, 0);
+color: rgb(0, 255, 0);</string>
+    </property>
     <property name="text">
      <string>OUTPUT</string>
     </property>
@@ -110,6 +128,9 @@
       <width>631</width>
       <height>171</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
     </property>
    </widget>
    <widget class="QComboBox" name="HashCombo">
@@ -129,6 +150,10 @@
       <italic>true</italic>
       <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(0, 255, 0);</string>
     </property>
     <item>
      <property name="text">
